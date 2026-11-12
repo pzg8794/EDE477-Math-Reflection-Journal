@@ -1,0 +1,44 @@
+% Shared visual system adapted from the EDE477 Social Studies Experience Reflection.
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{needspace}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\definecolor{PrimaryRed}{HTML}{8B1E1E}
+\definecolor{DeepNavy}{HTML}{15324A}
+\definecolor{SoftBlue}{HTML}{DDEEFF}
+\hypersetup{colorlinks=true,linkcolor=DeepNavy,urlcolor=DeepNavy,
+  pdftitle={Mathematics Experience Reflection},
+  pdfauthor={Piter Zacari Garcia Bautista},
+  pdfsubject={EDE477 Pre-Reading Reflective Journal},
+  pdfkeywords={mathematics, reasoning, camp teaching, evidence, access, identity}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\setstretch{1.16}
+\newcommand{\reviewsection}[1]{%
+  \par\Needspace{4\baselineskip}\addvspace{0.10in}%
+  \noindent{\large\bfseries\color{PrimaryRed}#1}\par
+  \vspace{0.025in}%
+}
+\newcommand{\bodyformat}{%
+  \newgeometry{left=0.75in,right=0.75in,top=0.7in,bottom=0.7in,headheight=14pt,headsep=0.18in,footskip=0.28in}%
+  \hypersetup{pageanchor=true}%
+  \pagenumbering{arabic}%
+  \pagestyle{fancy}\fancyhf{}%
+  \lhead{\small Piter Garcia}%
+  \rhead{\small EDE477 --- Mathematics Experience Reflection}%
+  \cfoot{\small\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+}
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
