@@ -6,11 +6,21 @@ This repository contains the original pre-reading mathematics reflection, now wi
 
 ## Build in Overleaf
 
-1. Set **`main.tex`** as the Main document.
-2. Use **pdfLaTeX**.
-3. Compile. The illustrated output has a **cover + 2 pages of reflection** (3 PDF pages total).
+1. Sync/pull the latest GitHub revision into the connected Overleaf project.
+2. Keep the existing selected **`response-only.tex`** entry point, or select **`main.tex`**; both now compile the illustrated journal.
+3. Compile with **pdfLaTeX**. The output is **one cover + two reflection pages** (3 PDF pages total).
 
-The shared source files `preamble.tex`, `reflection.tex`, and `response-only.tex` remain unchanged from your original import. If you need a version without the cover, compile `response-only.tex` (2 PDF pages).
+For a version without the cover, compile **`text-only.tex`** (2 PDF pages). The original body-only source was copied there verbatim; `response-only.tex` is now a compatibility entry point for the existing Overleaf main-file setting.
+
+## Main-file compatibility and GitHub synchronization
+
+**Observed November 12:** The live Overleaf project was compiling `response-only.tex`, showing only two body pages. Therefore the source of this repository now makes **`response-only.tex` forward to `main.tex`**, so the existing Overleaf main-file setting produces the illustrated cover and the two-page reflection *after the repository changes are synchronized into Overleaf*.
+
+- Compile `response-only.tex` **or** `main.tex` for **three PDF pages total**: one illustrated cover plus two reflection pages. The cover is front matter, not part of the 1-2 page reflection.
+- Compile `text-only.tex` for the original body-only two-page PDF. This is the exact prior `response-only.tex`, preserved byte-for-byte.
+- The original `preamble.tex`, `reflection.tex`, `main.tex`, and three cropped images are unchanged. No assigned mathematics readings were inserted.
+- **Overleaf GitHub integration may require a pull/sync** from the project Integrations menu before it sees new GitHub commits; GitHub commits alone are not proof the Overleaf cloud project has updated.
+- The connected Blackboard submission is separate; **no Blackboard upload or submission was performed**.
 
 ## Content and evidence
 
